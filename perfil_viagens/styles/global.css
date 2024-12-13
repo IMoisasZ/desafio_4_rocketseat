@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* font family */
+    --ff-poppins: 'Poppins', sans-serif;
+    
+    /* font weight */
+    --fw-bold: bold;
+    --fw-Regular: 400;
+
+    /* fonts */
+    --heading: var(--fw-bold) 1.5rem/125% var(--ff-poppins);
+    --paragraph-md: var(--fw-Regular) 1rem/170% var(--ff-poppins);
+    --paragraph-sm: var(--fw-Regular) .875rem/170% var(--ff-poppins);
+
+    /* colors */
+    --brand-color: #EF5F4C;
+    --background-color: #FFFFFF;
+    --surface-color: #F5F5F5;
+    --skeleton-color: #D9D9D9;
+    
+    /* text colors */
+    --text-color-primary: #313131;
+    --text-color-secondary: #6C6C6C;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color-secondary);
+}

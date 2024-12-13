@@ -1,0 +1,113 @@
+#ia {
+    background-color: var(--stroke-color);
+    margin-bottom: 2rem;
+
+    padding: 1rem;
+    
+    & header {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding-inline: 0;
+
+        margin-bottom: 1.5rem;
+        
+        & .title-card {
+            font-size: 14px;
+        }
+
+        & div {
+            display: flex;
+            & span {
+                font-size: 14px;
+            }
+        }
+    }
+
+    & .grid-cards {
+        display: flex;
+        flex-direction: column;
+
+        & .format-ia {
+            display: grid;
+            grid-template-columns: 1fr 14.5rem;
+            margin-bottom: 2rem;
+            column-gap: 1rem;
+        
+            & h3 {
+                font: var(--heading2);
+                color: var(--text-color-primary); 
+                margin-top: .5rem;   
+            }
+        
+            & p {
+                margin-top: .5rem;
+                color: var(--text-color-secondary);
+                font: var(--paragraph);
+            }
+        }
+
+        & .column-2 > img {
+            margin-bottom: 2rem;
+        }
+    }
+    
+}
+
+@media (width >= 80em) {
+    #ia {
+        padding: 2rem;
+
+        & header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        & .grid-cards {
+            display: grid;
+            grid-template-columns:  43.5rem 30.5rem;
+            column-gap: 2rem;
+
+            & .column-1 {
+                grid-auto-flow: dense;
+                direction: rtl;
+                margin-bottom: 2rem;
+                & header {
+                    direction: ltr
+                }
+
+                & .format-ia {
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+
+                    & .span-card {
+                        & div {
+                            text-align: left;
+                        }
+                    }
+                }
+
+            }
+
+            & .column-2 {
+                & > img {
+                    grid-row: 2fr;
+                    width: 100%;
+                }
+
+                & .format-ia {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: left;
+    
+                        & .span-card {
+                            & div {
+                                text-align: left;
+                            }
+                        }
+                    }
+            }
+        }
+    }
+}

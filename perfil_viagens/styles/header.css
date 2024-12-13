@@ -1,0 +1,33 @@
+header {
+    padding: 1rem;
+    background-color: var(--surface-color);
+    
+    & nav {
+        display: flex;
+        justify-content: space-between;
+
+        & ul {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        & > div {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}
+
+@media (width >= 80em) {
+    & header {
+        padding: 1.25rem 2rem;
+        color: var(--text-color-secondary);
+        font: var(--paragraph-md);
+    }
+    
+    & .desktop-only {
+        display: flex;
+    }
+
+}

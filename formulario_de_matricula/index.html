@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Formulário de Matricula</title>
+		<!-- css -->
+		<link
+			rel="stylesheet"
+			href="./styles/styles.css" />
+
+		<!-- google fonts -->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img
+					src="./assets/logo.svg"
+					alt="" />
+			</div>
+
+			<img
+				class="main-img"
+				src="./assets/Illustration.png"
+				alt="" />
+		</header>
+		<nav>
+			<img
+				src="./assets/icons/arrow-left.svg"
+				alt="" />
+			<span>Voltar</span>
+		</nav>
+		<main>
+			<h1>Formulário de matrícula</h1>
+			<p>
+				Preencha os dados abaixo para matricular seu filho na escola de educação
+				infantil Estrelas do Amanhã.
+			</p>
+
+			<form action="">
+				<fieldset>Informações da Criança</fieldset>
+				<div class="input">
+					<label for="fullname">Nome completo</label>
+					<input
+						type="text"
+						id="fullname"
+						placeholder="Qual o nome da criança" />
+				</div>
+				<div class="input">
+					<label for="">Data de nascimento</label>
+					<input type="date" />
+				</div>
+				<div class="input">
+					<label for="">Sexo</label>
+					<select
+						name=""
+						id="">
+						<option value="0">...</option>
+						<option value="1">Masculino</option>
+						<option value="2">Feminino</option>
+					</select>
+				</div>
+				<div class="input">
+					<label for="">Informações médicas</label>
+					<textarea
+						name=""
+						id=""
+						rows="4"></textarea>
+				</div>
+
+				<div class="input drop-zone">
+					<label for="">Certidão de nascimento</label>
+					<input type="file" />
+					<img
+						src="./assets/icons/cloud-upload.svg"
+						alt="" />
+					<p>Clique aqui para selecionar os arquivos</p>
+				</div>
+
+				<fieldset>Endereço residencial</fieldset>
+				<div class="input">
+					<label for="">Cep</label>
+					<input type="text" />
+				</div>
+
+				<div class="input">
+					<label for="">Rua</label>
+					<input type="text" />
+				</div>
+
+				<div class="input">
+					<label for="">Numero</label>
+					<input type="text" />
+				</div>
+
+				<div class="input">
+					<label for="">Cidade</label>
+					<input type="text" />
+				</div>
+
+				<div class="input">
+					<label for="">Estado</label>
+					<input type="text" />
+				</div>
+
+				<fieldset>Informações do responsável</fieldset>
+
+				<div class="input">
+					<label for="">Nome do responsável</label>
+					<input type="text" />
+					<span>Principal responsável legal e contato de emergência</span>
+				</div>
+
+				<div class="input">
+					<label for="">Telefone</label>
+					<input type="text" />
+				</div>
+
+				<div class="input">
+					<label for="">Email</label>
+					<input type="email" />
+				</div>
+
+				<fieldset>Opçoes de matricula</fieldset>
+				<p class="p">Selecione o turno de estudo</p>
+				<div class="grid-2-col">
+					<div class="choose">
+						<div class="check">
+							<input type="checkbox" />
+						</div>
+						<div class="choose-1">
+							<img
+								src="./assets/icons/sun-cloud-02.svg"
+								alt="" />
+							<p>Manhã</p>
+						</div>
+					</div>
+
+					<div class="choose">
+						<div class="check">
+							<input type="checkbox" />
+						</div>
+						<div class="choose-1">
+							<img
+								src="./assets/icons/sun-02.svg"
+								alt="" />
+							<p>Tarde</p>
+						</div>
+					</div>
+				</div>
+
+				<p class="p">Em qual esporte você gostaria de inscrever seu filho?</p>
+				<div class="grid-2-col">
+					<div class="choose">
+						<div class="check">
+							<input type="checkbox" />
+						</div>
+						<div class="choose-1">
+							<img
+								src="./assets/icons/football.svg"
+								alt="" />
+							<p>Futebool</p>
+						</div>
+					</div>
+
+					<div class="choose">
+						<div class="check">
+							<input type="checkbox" />
+						</div>
+						<div class="choose-1">
+							<img
+								src="./assets/icons/basketball-02.svg"
+								alt="" />
+							<p>Basquete</p>
+						</div>
+					</div>
+
+					<div class="choose">
+						<div class="check">
+							<input type="checkbox" />
+						</div>
+						<div class="choose-1">
+							<img
+								src="./assets/icons/swimming.svg"
+								alt="" />
+							<p>Natação</p>
+						</div>
+					</div>
+
+					<div class="choose">
+						<div class="check">
+							<input type="checkbox" />
+						</div>
+						<div class="choose-1">
+							<img
+								src="./assets/icons/Yoga.svg"
+								alt="" />
+							<p>Yoga</p>
+						</div>
+					</div>
+
+					<div class="choose">
+						<div class="check">
+							<input type="checkbox" />
+						</div>
+						<div class="choose-1">
+							<img
+								src="./assets/icons/volleyball.svg"
+								alt="" />
+							<p>Voley</p>
+						</div>
+					</div>
+
+					<div class="choose">
+						<div class="check">
+							<input type="checkbox" />
+						</div>
+						<div class="choose-1">
+							<img
+								src="./assets/icons/boxing-glove-01.svg"
+								alt="" />
+							<p>Boxe</p>
+						</div>
+					</div>
+				</div>
+				<div class="conditions">
+					<input type="checkbox" />
+					<p>
+						Declaro que li e concordo com os
+						<span>Termos e Condições e com a Política de Privacidade</span> da
+						escola Estrela do Amanhã.
+					</p>
+				</div>
+				<div class="btns">
+					<button class="btn-1 btn">Salvar respostas</button>
+					<button class="btn-2 btn">Fazer matricula</button>
+				</div>
+			</form>
+		</main>
+	</body>
+</html>

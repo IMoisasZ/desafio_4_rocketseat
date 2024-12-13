@@ -1,0 +1,46 @@
+header {
+    padding: 1rem;
+    background-color: var(--stroke-color);
+
+    & div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    & div > div {
+        display: flex;
+        gap: .5rem;
+    }
+
+    & span {
+        color: var(--text-color-primary);
+        font: var(--heading2-bold);
+    }
+
+    & nav {
+        padding-block: 0.875rem;
+        border-block: 1px solid var(--stroke-color);
+        
+        & ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            color: var(--text-color-secondary);
+            font: var(--span);
+        }
+    }
+
+
+}
+
+@media (width >= 80em) {
+    header {
+        padding: 1.25rem 2rem;
+
+        & .desktop-only {
+            display: initial;
+        }
+    }
+}

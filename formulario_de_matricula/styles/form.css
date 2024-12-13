@@ -1,0 +1,50 @@
+main {
+    & h1 {
+        font: var(--f-heading2-1);
+        color: var(--text-primary);
+        padding-bottom: .5rem;
+    }
+
+    & > p {
+        font: var(--f-paragraph);
+        color: var(--text-secondary);
+        padding-bottom: 3rem;
+    }
+
+    .conditions {
+        display: flex;
+        align-items: flex-start;
+        gap: .875rem;
+        font: var(--f-paragraph3);
+        margin-block: 3rem;
+        & span {
+            color: var(--text-highlight);
+        }
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn {
+        padding: .75rem 1.5rem;
+        border-radius: .5rem;
+        font: var(--f-paragraph3);
+        cursor: pointer;
+    }
+    
+    .btn-1 {
+        color: var(--text-highlight);
+        background-color: var(--surface-primary);
+        border: 1px solid var(--text-highlight);
+    }
+
+    .btn-2 {
+        color: var(--surface-primary);
+        background-color: var(--brand-dark);
+        border: 1px solid var(--brand-dark);
+    }
+
+}

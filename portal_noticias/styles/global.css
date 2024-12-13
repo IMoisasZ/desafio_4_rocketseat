@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* font family */
+    --ff-archivo: "Archivo", sans-serif;
+
+    /* font weight */
+    --fw-extra-bold: 800;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-medium: 500;
+    --fw-regular: 400;
+
+    /* font size */
+    --fs-heading1: 1.5rem;
+    --fs-heading2: 1rem;
+    --fs-heading3: 0.875rem;
+    --fs-span: 0.675rem;
+
+    /* font */
+    --heading1: var(--fw-extra-bold) var(--fs-heading1)/135% var(--ff-archivo);
+    --heading2: var(--fw-extra-bold) var(--fs-heading2) /140% var(--ff-archivo);
+    --heading2-bold: var(--fw-bold) var(--fs-heading2) /140% var(--ff-archivo); 
+    --heading3: var(--fw-extra-bold) var(--fs-heading3)/140% var(--ff-archivo);
+    --span: var(--fw-semi-bold) var(--fs-heading3)/145% var(--ff-archivo);
+    --span-card: var(--fw-medium) var(--fs-span)/120% var(--ff-archivo);
+    --paragraph: var(--fw-regular) var(--fs-heading3)/160% var(--ff-archivo); 
+
+    /* colors */
+    --brand-color-light: #60A5FA;
+    --brand-color-dark: #1D4ED8;
+    --bg-color: #0F172A;
+    --stroke-color: #1E293B;
+    --text-color-primary: #F1F5F9;
+    --text-color-secondary: #CBD5E1;
+}
+
+ul {
+    list-style: none;
+}
+
+@media (width >= 80em) {
+    .mobile {
+        display: none;
+    }
+}
